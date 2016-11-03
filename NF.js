@@ -87,3 +87,5 @@ class NF{
   }
 
 }
+
+export default NF;
