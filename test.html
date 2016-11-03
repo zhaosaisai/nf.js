@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript" src="./NF.js"></script>
+</body>
+<script type="text/javascript">
+  var nf = new NF({
+    title:'这是我自定义的title',
+    body:'这是我自己的body体',
+    icon:'https://www.google.com.hk/images/nav_logo242.png',
+    click:function(){
+      alert('close');
+    },
+    close:function(){
+      alert('close');
+    }
+  });
+
+  nf.show().click(function(){alert('你怎么又弹出来了')}).close();
+</script>
+</html>
